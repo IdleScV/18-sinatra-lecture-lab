@@ -1,0 +1,12 @@
+<%author = Author.find(@author_id)%>
+
+<h2>This is a page for <%=author.name%></h2>
+
+    <%author.books.each do |book|%>
+        <a href="/books/<%=book.id%>"><%= book.title %></a>
+        <br>
+    <% end %>
+
+<br>
+
+<a href="/authors">Back to Authors</a>

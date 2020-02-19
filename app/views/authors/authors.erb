@@ -1,0 +1,8 @@
+<h1>Authors</h1>
+
+<%Author.all.each do |instance|%>
+
+    <a href="/authors/<%=instance.id%>"><%= instance.name %></a>
+    <br>
+
+    <%end%>
